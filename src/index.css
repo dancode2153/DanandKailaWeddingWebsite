@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap");
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Georgia", serif;
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-script: "Great Vibes", cursive;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #f8f5f0;
+  --color-stone: #b4a699;
+  --color-stone-dark: #a19c96;
+  --color-sage: #90967a;
+  --color-sage-dark: #5b625b;
+  --color-forest: #34420d;
+  --color-forest-dark: #232c09;
+  --color-brown: #6b553d;
+  --color-charcoal: #342b1c;
+  --color-gold: #cdb994;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+}
