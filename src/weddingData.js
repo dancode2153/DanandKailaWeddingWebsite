@@ -173,21 +173,6 @@ export const giftGuide = [
   "Most of all, we ask for your prayers as we build a marriage centered on Christ.",
 ]
 
-export const registry = [
-  {
-    name: "Amazon",
-    url: "https://www.amazon.com/wedding",
-  },
-  {
-    name: "Crate & Barrel",
-    url: "https://www.crateandbarrel.com/gift-registry",
-  },
-  {
-    name: "Honeymoon Fund",
-    url: "#",
-  },
-]
-
 export const rsvp = {
   deadline: "October 31, 2026",
   qrCode: rsvpQrCode,

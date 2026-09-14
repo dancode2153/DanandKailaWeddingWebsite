@@ -6,7 +6,6 @@ const sections = [
   { hash: "#story", label: "Our Story" },
   { hash: "#details", label: "Details" },
   { hash: "#location", label: "Location" },
-  { hash: "#registry", label: "Registry" },
   { hash: "#rsvp", label: "RSVP" },
 ]
 
