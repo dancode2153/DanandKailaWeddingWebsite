@@ -14,7 +14,7 @@ function CountdownSection() {
         </p>
         <p className="font-script text-forest text-6xl sm:text-7xl mb-12">I Do</p>
 
-        <div className="relative inline-block px-10 sm:px-16 py-8">
+        <div className="relative inline-block px-4 sm:px-16 py-8">
           <CornerFrame tone="dark" size="w-6 h-6" className="inset-0" />
           <Countdown targetDate={weddingDate} />
         </div>
