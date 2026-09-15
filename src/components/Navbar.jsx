@@ -44,7 +44,7 @@ function Navbar() {
         <ul className="hidden md:flex gap-8 text-xs tracking-[0.2em] uppercase">
           {sections.map((section) => (
             <li key={section.hash}>
-              <a href={onHome ? section.hash : `/${section.hash}`} className={linkClass}>
+              <a href={onHome ? section.hash : "/"} className={linkClass}>
                 {section.label}
               </a>
             </li>
@@ -73,7 +73,7 @@ function Navbar() {
           {sections.map((section) => (
             <li key={section.hash}>
               <a
-                href={onHome ? section.hash : `/${section.hash}`}
+                href={onHome ? section.hash : "/"}
                 onClick={() => setOpen(false)}
                 className={linkClass}
               >
