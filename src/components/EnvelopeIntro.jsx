@@ -24,7 +24,7 @@ function EnvelopeIntro() {
 
   return (
     <div
-      className={`fixed inset-0 z-[60] flex items-center justify-center bg-forest transition-opacity duration-700 ${
+      className={`fixed inset-0 z-[60] flex items-center justify-center bg-white transition-opacity duration-700 ${
         opening ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
@@ -41,7 +41,7 @@ function EnvelopeIntro() {
             width="180"
             height="100"
             rx="3"
-            fill="#F8F5F0"
+            fill="#34420D"
             stroke="#CDB994"
             strokeWidth="1.5"
           />
@@ -54,7 +54,7 @@ function EnvelopeIntro() {
           />
           <path
             d="M10 30 L190 30 L100 90 Z"
-            fill="#EDE6D8"
+            fill="#3E4E12"
             stroke="#CDB994"
             strokeWidth="1.5"
             className={`transition-all ${
@@ -87,7 +87,7 @@ function EnvelopeIntro() {
           </text>
         </svg>
 
-        <span className="text-cream/80 text-xs uppercase tracking-[0.4em] group-hover:text-gold transition-colors duration-[1400ms] ease-[cubic-bezier(0.45,0,0.2,1)]">
+        <span className="text-forest/70 text-xs uppercase tracking-[0.4em] group-hover:text-gold transition-colors duration-[1400ms] ease-[cubic-bezier(0.45,0,0.2,1)]">
           Tap to Open
         </span>
       </button>
