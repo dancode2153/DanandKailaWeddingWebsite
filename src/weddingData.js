@@ -29,11 +29,10 @@ export const weddingDate = "2026-12-07T15:00:00"
 export const venue = {
   name: "Xaris Orchard",
   address: "Bulawan, Pagadian City",
-  // "Xaris Orchard" doesn't geocode reliably on its own (it fuzzy-matches to
-  // an unrelated business). This pins the general barangay instead.
-  // TODO: replace with the venue's exact Google Maps share link or GPS
-  // coordinates once you have one, so guests get the precise pin.
-  mapQuery: "Bulawan, Pagadian City, Zamboanga del Sur, Philippines",
+  // Exact coordinates for Duran's Farm (the venue), from its Google Maps
+  // place link, so the embed and "Get Directions" button both pin the
+  // precise spot instead of the general barangay.
+  mapQuery: "7.8654782,123.3794877",
 }
 
 // TODO: confirm exact ceremony/reception times.
