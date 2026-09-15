@@ -57,8 +57,10 @@ function EnvelopeIntro() {
             fill="#EDE6D8"
             stroke="#CDB994"
             strokeWidth="1.5"
-            className={`transition-all duration-700 ease-in-out ${
-              opening ? "-translate-y-12 -rotate-6 opacity-0" : ""
+            className={`transition-all ${
+              opening
+                ? "duration-700 ease-in-out -translate-y-12 -rotate-6 opacity-0"
+                : "duration-[1400ms] ease-[cubic-bezier(0.45,0,0.2,1)] group-hover:-translate-y-5 group-hover:-rotate-3"
             }`}
             style={{ transformBox: "fill-box", transformOrigin: "top" }}
           />
@@ -85,7 +87,7 @@ function EnvelopeIntro() {
           </text>
         </svg>
 
-        <span className="text-cream/80 text-xs uppercase tracking-[0.4em] group-hover:text-gold transition-colors">
+        <span className="text-cream/80 text-xs uppercase tracking-[0.4em] group-hover:text-gold transition-colors duration-[1400ms] ease-[cubic-bezier(0.45,0,0.2,1)]">
           Tap to Open
         </span>
       </button>
