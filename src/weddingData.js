@@ -1,6 +1,6 @@
 // Edit the details below to personalize the site.
 
-// Real photos of Naris Orchard, in src/assets/venue/.
+// Real photos of Xaris Orchard, in src/assets/venue/.
 import venuePhoto1 from "./assets/venue/venue-1.jpg"
 import venuePhoto2 from "./assets/venue/venue-2.jpg"
 import venuePhoto3 from "./assets/venue/venue-3.jpg"
@@ -27,9 +27,9 @@ export const couple = {
 export const weddingDate = "2026-12-07T15:00:00"
 
 export const venue = {
-  name: "Náris Orchard",
+  name: "Xaris Orchard",
   address: "Bulawan, Pagadian City",
-  // "Náris Orchard" doesn't geocode reliably on its own (it fuzzy-matches to
+  // "Xaris Orchard" doesn't geocode reliably on its own (it fuzzy-matches to
   // an unrelated business). This pins the general barangay instead.
   // TODO: replace with the venue's exact Google Maps share link or GPS
   // coordinates once you have one, so guests get the precise pin.
