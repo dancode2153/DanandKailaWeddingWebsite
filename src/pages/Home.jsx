@@ -5,10 +5,12 @@ import OurStory from "../components/OurStory"
 import EventDetails from "../components/EventDetails"
 import Location from "../components/Location"
 import RSVP from "../components/RSVP"
+import EnvelopeIntro from "../components/EnvelopeIntro"
 
 function Home() {
   return (
     <>
+      <EnvelopeIntro />
       <Navbar />
       <Hero />
       <CountdownSection />

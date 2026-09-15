@@ -1,0 +1,96 @@
+import { useEffect, useState } from "react"
+import { couple } from "../weddingData"
+
+function EnvelopeIntro() {
+  const [opening, setOpening] = useState(false)
+  const [hidden, setHidden] = useState(false)
+
+  useEffect(() => {
+    if (hidden) return
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [hidden])
+
+  if (hidden) return null
+
+  const handleOpen = () => {
+    if (opening) return
+    setOpening(true)
+    window.setTimeout(() => setHidden(true), 1000)
+  }
+
+  return (
+    <div
+      className={`fixed inset-0 z-[60] flex items-center justify-center bg-forest transition-opacity duration-700 ${
+        opening ? "opacity-0 pointer-events-none" : "opacity-100"
+      }`}
+    >
+      <button
+        type="button"
+        onClick={handleOpen}
+        aria-label="Open your invitation"
+        className="group flex flex-col items-center gap-7 cursor-pointer"
+      >
+        <svg viewBox="0 0 200 140" className="w-52 sm:w-72 h-auto overflow-visible">
+          <rect
+            x="10"
+            y="30"
+            width="180"
+            height="100"
+            rx="3"
+            fill="#F8F5F0"
+            stroke="#CDB994"
+            strokeWidth="1.5"
+          />
+          <path
+            d="M10 30 L100 95 L190 30"
+            fill="none"
+            stroke="#CDB994"
+            strokeWidth="1"
+            opacity="0.5"
+          />
+          <path
+            d="M10 30 L190 30 L100 90 Z"
+            fill="#EDE6D8"
+            stroke="#CDB994"
+            strokeWidth="1.5"
+            className={`transition-all duration-700 ease-in-out ${
+              opening ? "-translate-y-12 -rotate-6 opacity-0" : ""
+            }`}
+            style={{ transformBox: "fill-box", transformOrigin: "top" }}
+          />
+          <circle
+            cx="100"
+            cy="72"
+            r="15"
+            fill="#CDB994"
+            className={`transition-all duration-500 ease-in-out ${
+              opening ? "opacity-0 scale-75" : ""
+            }`}
+            style={{ transformBox: "fill-box", transformOrigin: "center" }}
+          />
+          <text
+            x="100"
+            y="77"
+            textAnchor="middle"
+            fontSize="13"
+            fill="#34420D"
+            fontFamily="'Great Vibes', cursive"
+            className={`transition-opacity duration-500 ${opening ? "opacity-0" : ""}`}
+          >
+            {couple.nickname1[0]}&{couple.nickname2[0]}
+          </text>
+        </svg>
+
+        <span className="text-cream/80 text-xs uppercase tracking-[0.4em] group-hover:text-gold transition-colors">
+          Tap to Open
+        </span>
+      </button>
+    </div>
+  )
+}
+
+export default EnvelopeIntro
