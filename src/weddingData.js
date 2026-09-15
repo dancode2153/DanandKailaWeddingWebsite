@@ -29,10 +29,10 @@ export const weddingDate = "2026-12-07T15:00:00"
 export const venue = {
   name: "Xaris Orchard",
   address: "Bulawan, Pagadian City",
-  // Exact coordinates for Duran's Farm (the venue), from its Google Maps
-  // place link, so the embed and "Get Directions" button both pin the
-  // precise spot instead of the general barangay.
-  mapQuery: "7.8654782,123.3794877",
+  // Named place query (not bare coordinates) so the embed and "Get
+  // Directions" button both show the "Duran's Farm" label, not just a
+  // generic pin. Verified against the venue's own Google Maps place page.
+  mapQuery: "Duran's Farm, Bulawan, Pagadian City, Zamboanga del Sur, Philippines",
 }
 
 // TODO: confirm exact ceremony/reception times.
