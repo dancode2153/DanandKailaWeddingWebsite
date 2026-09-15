@@ -2,6 +2,7 @@
 import Divider from "./Divider"
 import CornerFrame from "./CornerFrame"
 import Button from "./Button"
+import FloralAccent from "./FloralAccent"
 
 function Hero() {
   const date = new Date(weddingDate)
@@ -26,6 +27,15 @@ function Hero() {
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[460px] h-[610px] sm:w-[570px] sm:h-[740px] rounded-[50%] border border-gold/10"
+      />
+
+      <FloralAccent
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-4 -left-6 h-40 sm:h-56 w-auto text-[#EDE6D8]/25 rotate-[8deg]"
+      />
+      <FloralAccent
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-6 -right-4 h-28 sm:h-40 w-auto text-[#EDE6D8]/20 rotate-[195deg] scale-x-[-1]"
       />
 
       <div className="relative animate-[fade-in_1.2s_ease-out]">
