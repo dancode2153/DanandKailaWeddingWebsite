@@ -76,10 +76,11 @@ function EnvelopeIntro() {
           />
           <text
             x="100"
-            y="77"
+            y="72"
             textAnchor="middle"
+            dominantBaseline="central"
             fontSize="13"
-            fill="#34420D"
+            fill="#FFFFFF"
             fontFamily="'Great Vibes', cursive"
             className={`transition-opacity duration-500 ${opening ? "opacity-0" : ""}`}
           >
