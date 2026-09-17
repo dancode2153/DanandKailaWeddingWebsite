@@ -23,8 +23,7 @@ export const couple = {
 }
 
 // ISO date string used for the countdown and event details.
-// TODO: confirm exact ceremony start time.
-export const weddingDate = "2026-12-07T15:00:00"
+export const weddingDate = "2026-12-07T16:00:00"
 
 export const venue = {
   name: "Xaris Orchard",
@@ -35,11 +34,7 @@ export const venue = {
   mapQuery: "Duran's Farm, Bulawan, Pagadian City, Zamboanga del Sur, Philippines",
 }
 
-// TODO: confirm exact ceremony/reception times.
-export const schedule = [
-  { title: "Ceremony", time: "3:00 PM" },
-  { title: "Reception", time: "5:00 PM" },
-]
+export const schedule = [{ title: "Ceremony", time: "4:00 PM" }]
 
 export const ourStory = [
   "We met on February 2022, in university through a mutual friend. It started with a group study, the very normal kind where everyone had their own notes, deadlines, and things they were trying to understand.",

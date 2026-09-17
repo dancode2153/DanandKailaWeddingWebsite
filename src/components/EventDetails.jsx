@@ -22,11 +22,11 @@ function EventDetails() {
           {venue.address}
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 max-w-2xl mx-auto">
+        <div className="max-w-md mx-auto">
           {schedule.map((item) => (
-            <Card key={item.title} tone="light" className="flex-1">
-              <p className="font-script text-gold text-3xl mb-2">{item.title}</p>
-              <p className="uppercase tracking-[0.3em] text-sm text-cream/80">
+            <Card key={item.title} tone="light" className="px-14 py-14 sm:px-20 sm:py-16">
+              <p className="font-script text-gold text-5xl sm:text-6xl mb-4">{item.title}</p>
+              <p className="uppercase tracking-[0.35em] text-base sm:text-lg text-cream/80">
                 {item.time}
               </p>
             </Card>
